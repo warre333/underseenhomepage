@@ -2,7 +2,8 @@
 // import '../styles/Header.css';
 
 // Import Logo
-import Logo from '../images/UnderseenLogo.png';
+import LogoDark from '../../images/logo_dark.png';
+import LogoLight from '../../images/logo_light.png';
 
 import { useState, useEffect } from 'react';
 import {
@@ -11,9 +12,9 @@ import {
 
 const styles = {
   header: {
-    opacity: "0.5",
     height: "10vh",
-    position: "sticky",
+    width: "100%",
+    position: "absolute",
     top: "0",
     zIndex: "10",
   },
@@ -52,7 +53,7 @@ function Header() {
   return (
     <div className="" style={navbar ? styles.headerActive : styles.header}>
       <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <img src={Logo} style={styles.logo} className="text-center" alt="Underseen Logo"  />
+        <img src={navbar ? LogoDark : LogoLight} style={styles.logo} className="text-center" alt="Underseen Logo"  />
       </header>
     </div>
   );
