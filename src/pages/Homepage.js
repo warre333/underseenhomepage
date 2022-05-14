@@ -1,13 +1,28 @@
 import React from 'react'
+import Footer from '../components/Footer'
+
 import Header from '../components/homepage/HeaderHomepage'
+import HowDoesItWork from '../components/homepage/HowDoesItWork'
+import HowSecurity from '../components/homepage/HowSecurity'
+import Newsletter from '../components/homepage/Newsletter'
 import SlideShow from '../components/homepage/SlideShow'
+import WhatIsUnderseen from '../components/homepage/WhatIsUnderseen'
+import WhyUnderseen from '../components/homepage/WhyUnderseen'
 
 function Homepage() {
   return (
-    <div style={{height: "200vh"}}>
-        <Header />
+    <div>
+      <Header />
 
-        <SlideShow />
+      <SlideShow />
+      <WhatIsUnderseen />
+      <WhyUnderseen />
+      <HowDoesItWork />
+      <HowSecurity />
+
+      <Newsletter />
+
+      <Footer />
     </div>
   )
 }

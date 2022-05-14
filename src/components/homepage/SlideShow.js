@@ -19,6 +19,10 @@ const styles = {
         position: "absolute",
         top: "-10vh",
     },
+
+    keepQuality: {
+        objectFit: "cover",
+    },
 }
 
 function SlideShow() {
@@ -27,20 +31,31 @@ function SlideShow() {
         <div id="slideShow" className="carousel slide" data-bs-ride="carousel" style={styles.fullscreen}>
             <div className="carousel-inner" style={styles.fullscreen}>
                 <div className="carousel-item active" style={styles.fullscreen}>
-                    <img src={slide1} alt="" className="bd-placeholder-img" width="100%" height="100%" />
+                    <img 
+                        src={slide1} 
+                        alt="slide1"  
+                        style={styles.keepQuality} 
+                        className="bd-placeholder-img" 
+                        width="100%" 
+                        height="100%" 
+                    />
 
                     {/* <div className="container">
-                        <div className="carousel-caption text-start">
+                        <div className="carousel-caption text-center">
                             <h1>Example headline.</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a className="btn btn-lg btn-primary" href="/">Sign up today</a></p>
                         </div>
                     </div> */}
                 </div>
 
                 <div className="carousel-item" style={styles.fullscreen}>
-                    <img src={slide2} alt="" className="bd-placeholder-img" width="100%" height="100%" />
-
+                    <img 
+                        src={slide2} 
+                        alt="slide2" 
+                        style={styles.keepQuality} 
+                        className="bd-placeholder-img" 
+                        width="100%" 
+                        height="100%" 
+                    />
                     {/* <div className="container">
                         <div className="carousel-caption">
                             <h1>Another example headline.</h1>
@@ -51,8 +66,14 @@ function SlideShow() {
                 </div>
 
                 <div className="carousel-item" style={styles.fullscreen}>
-                    <img src={slide3} alt="" className="bd-placeholder-img" width="100%" height="100%" />
-
+                    <img 
+                        src={slide3} 
+                        alt="slide3" 
+                        style={styles.keepQuality} 
+                        className="bd-placeholder-img" 
+                        width="100%" 
+                        height="100%" 
+                    />
                     {/* <div className="container">
                         <div className="carousel-caption">
                             <h1>Another example headline.</h1>
@@ -63,8 +84,14 @@ function SlideShow() {
                 </div>
 
                 <div className="carousel-item" style={styles.fullscreen}>
-                    <img src={slide4} alt="" className="bd-placeholder-img" width="100%" height="100%" />
-
+                    <img 
+                        src={slide4} 
+                        alt="slide4" 
+                        style={styles.keepQuality} 
+                        className="bd-placeholder-img" 
+                        width="100%" 
+                        height="100%" 
+                    />
                     {/* <div className="container">
                         <div className="carousel-caption">
                             <h1>Another example headline.</h1>
@@ -75,8 +102,14 @@ function SlideShow() {
                 </div>
 
                 <div className="carousel-item" style={styles.fullscreen}>
-                    <img src={slide5} alt="" className="bd-placeholder-img" width="100%" height="100%" />
-
+                    <img 
+                        src={slide5} 
+                        alt="slide5" 
+                        style={styles.keepQuality} 
+                        className="bd-placeholder-img" 
+                        width="100%" 
+                        height="100%" 
+                    />
                     {/* <div className="container">
                         <div className="carousel-caption">
                             <h1>Another example headline.</h1>
@@ -87,8 +120,14 @@ function SlideShow() {
                 </div>
 
                 <div className="carousel-item" style={styles.fullscreen}>
-                    <img src={slide6} alt="" className="bd-placeholder-img" width="100%" height="100%" />
-
+                    <img 
+                        src={slide6} 
+                        alt="slide6" 
+                        style={styles.keepQuality} 
+                        className="bd-placeholder-img" 
+                        width="100%" 
+                        height="100%" 
+                    />
                     {/* <div className="container">
                         <div className="carousel-caption">
                             <h1>Another example headline.</h1>
