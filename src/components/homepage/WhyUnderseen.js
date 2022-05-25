@@ -3,6 +3,16 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
+import WhyUnderseen from '../../images/WhyUnderseen.jpg';
+
+const styles = {    
+    image: {
+        width: "100%",
+        height:  "100%",
+        objectFit: "cover",
+    },
+}
+
 function WhatIsUnderseen() {
     const { width } = useWindowDimensions();
 
@@ -21,10 +31,7 @@ function WhatIsUnderseen() {
         <div className="container">
             <div className="row">
                 <div className="col-md-5">
-                    <svg className="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#eee"></rect>
-                        <text x="50%" y="50%" fill="#aaa" dx="-1em">500x500</text>
-                    </svg>
+                    <img src={WhyUnderseen} alt="Why underseen" style={styles.image} />
                 </div>
 
                 <div className="col-md-7">

@@ -20,9 +20,10 @@ function Homepage() {
       <HowDoesItWork />
       <HowSecurity />
 
-      <Newsletter />
+      <div className="" style={{height: "10vh"}}></div>
+      {/* <Newsletter /> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

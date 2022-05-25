@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
+import axios from "axios"
+
 const styles = {
     marginLeft25: {
         marginLeft: "25%",
@@ -25,6 +27,12 @@ function Newsletter() {
         }
     })
 
+    const [email, setEmail] = useState()
+
+    async function subscribe(){
+        axios.post("https://92.205.12.81:4000/api/newsletter?email=" + email)
+    }
+
   return (
     <div className="border-top mt-5">
         <div class="newsletter-subscribe mt-5 container">
@@ -37,10 +45,10 @@ function Newsletter() {
                 <div class="form-inline row">
                     <div className="col-md-3" />
                     <div class="form-group col-8 col-md-5" style={styles.padding0}>
-                        <input class="form-control" type="email" name="email" placeholder="Your Email" />
+                        <input class="form-control" type="email" name="email" placeholder="Your Email" onChange={(e) => { setEmail(e.target.value) }} />
                     </div>
                     <div class="form-group col-4 col" style={styles.padding0}>
-                        <button class="btn btn-primary" type="button">Subscribe </button>
+                        <button class="btn btn-primary" type="button" onClick={subscribe}>Subscribe </button>
                     </div>
                     <div className="col-md-3" />
                 </div>
